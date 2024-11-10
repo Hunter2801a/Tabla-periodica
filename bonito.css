@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(41, 38, 43);
+    color: white;
+    font-family: Arial;
+}
+
+h1{
+    color: rgb(245, 169, 108);
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.tabla-periodica {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabla-periodica td {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#mAlca{
+    background-color: teal;
+}
+
+#metaloid{
+    background-color: #472a09;
+}
+
+#actinoid{
+    background-color: #5e4223;
+}
+
+#mAlcalTerr{
+    background-color: #944f3e;
+}
+
+#noReact {
+    background-color: #2a4957;
+}
+
+#pDesc{
+    background-color: #555454;
+}
+
+#mTrans{
+    background-color: #6a3d7c;
+}
+
+#gNoble{
+    background-color: #a58979; 
+}
+
+#mPostTrans{
+    background-color: #4b6b42;
+}
+
+#lantan{
+    background-color: #273272;
+}
+
+.tabla-periodica td:hover {
+    background-color: #664646; /* Cambia el color al pasar el ratón */
+}

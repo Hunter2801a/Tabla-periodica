@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bonito.css">
+    <title>Tabla Periodica</title>
+</head>
+<body>
+    <h1>Tabla Periodica de elementos quimicos</h1>
+
+    <div>
+        <table class="tabla-periodica">
+            <tr>
+                <td data-simbolo="H" data-numero="1" id="noReact">H<br>1</td>
+                <td colspan="26"> </td>
+                <td id="gNoble" data-simbolo="He" data-numero="2">He<br>2</td>
+            </tr>
+            <tr>
+                <td id="mAlca" data-simbolo="Li" data-numero="3">Li<br>3</td>
+                <td id="noReactTerr" data-simbolo="Be" data-numero="4">Be<br>4</td>
+                <td colspan="20"></td> <!-- Espacio vacío -->
+                <td id="metaloid" data-simbolo="B" data-numero="5">B<br>5</td>
+                <td id="noReact" data-simbolo="C" data-numero="6">C<br>6</td>
+                <td id="noReact" data-simbolo="N" data-numero="7">N<br>7</td>
+                <td id="noReact" data-simbolo="O" data-numero="8">O<br>8</td>
+                <td id="noReact" data-simbolo="F" data-numero="9">F<br>9</td>
+                <td id="gNoble" data-simbolo="Ne" data-numero="10">Ne<br>10</td>
+            </tr>
+            <tr>
+                <td id="mAlca" data-simbolo="Na" data-numero="11">Na<br>11</td>
+                <td id="noReactTerr" data-simbolo="Mg" data-numero="12">Mg<br>12</td>
+                <td colspan="20"></td> <!-- Espacio vacío -->
+                <td id="mPostTrans" data-simbolo="Al" data-numero="13">Al<br>13</td>
+                <td id="metaloid" data-simbolo="Si" data-numero="14">Si<br>14</td>
+                <td id="noReact" data-simbolo="P" data-numero="15">P<br>15</td>
+                <td id="noReact" data-simbolo="S" data-numero="16">S<br>16</td>
+                <td id="noReact" data-simbolo="Cl" data-numero="17">Cl<br>17</td>
+                <td id="gNoble" data-simbolo="Ar" data-numero="18">Ar<br>18</td>
+            </tr>
+            <tr>
+                <td id="mAlca" data-simbolo="K" data-numero="19">K<br>19</td>
+                <td id="noReactTerr" data-simbolo="Ca" data-numero="20">Ca<br>20</td>
+                <td id="mTrans" data-simbolo="Sc" data-numero="21">Sc<br>21</td>
+                <td colspan="10"></td> <!-- Espacio vacío -->
+                <td id="mTrans" data-simbolo="Ti" data-numero="22">Ti<br>22</td>
+                <td id="mTrans" data-simbolo="V" data-numero="23">V<br>23</td>
+                <td id="mTrans" data-simbolo="Cr" data-numero="24">Cr<br>24</td>
+                <td id="mTrans" data-simbolo="Mn" data-numero="25">Mn<br>25</td>
+                <td id="mTrans" data-simbolo="Fe" data-numero="26">Fe<br>26</td>
+                <td id="mTrans" data-simbolo="Co" data-numero="27">Co<br>27</td>
+                <td id="mTrans" data-simbolo="Ni" data-numero="28">Ni<br>28</td>
+                <td id="mTrans" data-simbolo="Cu" data-numero="29">Cu<br>29</td>
+                <td id="mTrans" data-simbolo="Zn" data-numero="30">Zn<br>30</td>
+                <td id="mPostTrans" data-simbolo="Ga" data-numero="31">Ga<br>31</td>
+                <td id="metaloid" data-simbolo="Ge" data-numero="32">Ge<br>32</td>
+                <td id="metaloid" data-simbolo="As" data-numero="33">As<br>33</td>
+                <td id="noReact" data-simbolo="Se" data-numero="34">Se<br>34</td>
+                <td id="noReact" data-simbolo="Br" data-numero="35">Br<br>35</td>
+                <td id="gNoble" data-simbolo="Kr" data-numero="36">Kr<br>36</td>
+            </tr>
+
+            <tr>
+                <td id="mAlca" data-simbolo="Rb" data-numero="37">Rb<br>37</td>
+                <td id="noReactTerr" data-simbolo="Sr" data-numero="">Sr<br>38</td>
+                <td data-simbolo="Y" data-numero="39">Y<br>39</td>
+                <td colspan="10"></td>
+                <td id="mTrans" data-simbolo="Zr" data-numero="40">Zr<br>40</td>
+                <td id="mTrans" data-simbolo="Nb" data-numero="41">Nb<br>41</td>
+                <td id="mTrans" data-simbolo="Mo" data-numero="42">Mo<br>42</td>
+                <td id="mTrans" data-simbolo="Tc" data-numero="43">Tc<br>43</td>
+                <td id="mTrans" data-simbolo="Ru" data-numero="44">Ru<br>44</td>
+                <td id="mTrans" data-simbolo="Rh" data-numero="45">Rh<br>45</td>
+                <td id="mTrans" data-simbolo="Pd" data-numero="46">Pd <br> 46</td>
+                <td id="mTrans" data-simbolo="Ag" data-numero="47">Ag<br>47</td>
+                <td id="mTrans" data-simbolo="Cd" data-numero="48">Cd<br>48</td>
+                <td id="mPostTrans" data-simbolo="In" data-numero="49">In<br>49</td>
+                <td id="mPostTrans" data-simbolo="Sn" data-numero="50">Sn<br>50</td>
+                <td id="metaloid" data-simbolo="Sb" data-numero="51">Sb<br>51</td>
+                <td id="metaloid" data-simbolo="Te" data-numero="52">Te<br>52</td>
+                <td id="noReact" data-simbolo="I" data-numero="53">I<br>53</td>
+                <td id="gNoble" data-simbolo="Xe" data-numero="54">Xe<br>54</td>
+            </tr>
+
+            <tr>
+                <td id="mAlca" data-simbolo="Cs" data-numero="55">Cs<br>55</td>
+                <td id="noReactTerr" data-simbolo="Ba" data-numero="56">Ba<br>56</td>
+                <td id="Lantan" data-simbolo="La" data-numero="57">La<br>57</td>
+                <td colspan="10"></td>
+                <td id="mTrans" data-simbolo="Hf" data-numero="72">Hf<br>72</td>
+                <td id="mTrans" data-simbolo="Ta" data-numero="73">Ta<br>73</td>
+                <td id="mTrans" data-simbolo="W" data-numero="74">W<br>74</td>
+                <td id="mTrans" data-simbolo="Re" data-numero="75">Re<br>75</td>
+                <td id="mTrans" data-simbolo="Os" data-numero="76">Os<br>76</td>
+                <td id="mTrans" data-simbolo="Ir" data-numero="77">Ir<br>77</td>
+                <td id="mTrans" data-simbolo="Pt" data-numero="78">Pt<br>78</td>
+                <td id="mTrans" data-simbolo="Au" data-numero="79">Au<br>79</td>
+                <td id="mTrans" data-simbolo="Hg" data-numero="80">Hg<br>80</td>
+                <td id="mPostTrans" data-simbolo="Tl" data-numero="81">Tl<br>81</td>
+                <td id="mPostTrans" data-simbolo="Pb" data-numero="82">Pb<br>82</td>
+                <td id="mPostTrans" data-simbolo="Bi" data-numero="83">Bi<br>83</td>
+                <td id="mPostTrans" data-simbolo="Po" data-numero="84">Po<br>84</td>
+                <td id="mPostTrans" data-simbolo="At" data-numero="85">At<br>85</td>
+                <td id="gNoble"data-simbolo="Rn" data-numero="86">Rn<br>86</td>
+            </tr>
+
+            <tr>
+                <td id="mAlca" data-simbolo="Fr" data-numero="87">Fr<br>87</td>
+                <td id="noReactTerr" data-simbolo="Ra" data-numero="88">Ra<br>88</td>
+                <td id="actinoid" data-simbolo="Ac" data-numero="89">Ac<br>89</td>
+                <td colspan="10"></td>
+                <td id="mTrans" data-simbolo="Rf" data-numero="104">Rf <br>104</td>
+                <td id="mTrans" data-simbolo="Db" data-numero="105">Db <br> 106</td>
+                <td id="mTrans" data-simbolo="Sg" data-numero="106">Sg <br> 106</td>
+                <td id="mTrans" data-simbolo="Bh" data-numero="107">Bh <br> 107</td>
+                <td id="mTrans" data-simbolo="Hs" data-numero="108">Hs <br> 108</td>
+                <td id="pDesc" data-simbolo="Mt" data-numero="109">Mt <br> 109</td>
+                <td id="pDesc" data-simbolo="Ds" data-numero="110">Ds <br> 110</td>
+                <td id="pDesc" data-simbolo="Rg" data-numero="111">Rg <br> 111</td>
+                <td id="pDesc" data-simbolo="Cn" data-numero="112">Cn <br> 112</td>
+                <td id="pDesc" data-simbolo="Nh" data-numero="113">Nh <br> 113</td>
+                <td id="pDesc" data-simbolo="Fl" data-numero="114">Fl <br> 114</td>
+                <td id="pDesc" data-simbolo="Mc" data-numero="115">Mc <br> 115</td>
+                <td id="pDesc" data-simbolo="Lv" data-numero="116">Lv <br> 116</td>
+                <td id="pDesc" data-simbolo="Ts" data-numero="117">Ts <br> 117</td>
+                <td id="pDesc" data-simbolo="Og" data-numero="118">Og <br> 118</td>
+            </tr>
+            
+            <tr>
+                <td colspan="13"></td>
+                <td id="Lantan" data-simbolo="La" data-numero="57">La<br>57</td>
+                <td id="Lantan" data-simbolo="Ce" data-numero="58">Ce<br>58</td>
+                <td id="Lantan" data-simbolo="Pr" data-numero="59">Pr<br>59</td>
+                <td id="Lantan" data-simbolo="Nd" data-numero="60">Nd<br>60</td>
+                <td id="Lantan" data-simbolo="Pm" data-numero="61">Pm<br>61</td>
+                <td id="Lantan" data-simbolo="Sm" data-numero="62">Sm<br>62</td>
+                <td id="Lantan" data-simbolo="Eu" data-numero="63">Eu<br>63</td>
+                <td id="Lantan" data-simbolo="Gd" data-numero="64">Gd<br>64</td>
+                <td id="Lantan" data-simbolo="Tb" data-numero="65">Tb<br>65</td>
+                <td id="Lantan" data-simbolo="Dy" data-numero="66">Dy<br>66</td>
+                <td id="Lantan" data-simbolo="Ho" data-numero="67">Ho<br>67</td>
+                <td id="Lantan" data-simbolo="Er" data-numero="68">Er<br>68</td>
+                <td id="Lantan" data-simbolo="Tm" data-numero="69">Tm<br>69</td>
+                <td id="Lantan" data-simbolo="Yb" data-numero="70">Yb<br>70</td>
+                <td id="Lantan" data-simbolo="Lu" data-numero="71">Lu<br>71</td>
+            </tr>
+            <tr>
+                <td colspan="13"></td>
+                <td id="actinoid" data-simbolo="Ac" data-numero="89">Ac<br>89</td>
+                <td id="actinoid" data-simbolo="Th" data-numero="90">Th<br>90</td>
+                <td id="actinoid" data-simbolo="Pa" data-numero="91">Pa<br>91</td>
+                <td id="actinoid" data-simbolo="U" data-numero="92">U<br>92</td>
+                <td id="actinoid" data-simbolo="Np" data-numero="93">Np<br>93</td>
+                <td id="actinoid" data-simbolo="Pu" data-numero="94">Pu<br>94</td>
+                <td id="actinoid" data-simbolo="Am" data-numero="95">Am<br>95</td>
+                <td id="actinoid" data-simbolo="Cm" data-numero="96">Cm<br>96</td>
+                <td id="actinoid" data-simbolo="Bk" data-numero="97">Bk<br>97</td>
+                <td id="actinoid" data-simbolo="Cf" data-numero="98">Cf<br>98</td>
+                <td id="actinoid" data-simbolo="Es" data-numero="99">Es<br>99</td>
+                <td id="actinoid" data-simbolo="Fm" data-numero="100">Fm<br>100</td>
+                <td id="actinoid" data-simbolo="Md" data-numero="101">Md<br>101</td>
+                <td id="actinoid" data-simbolo="No" data-numero="102">No<br>102</td>
+                <td id="actinoid" data-simbolo="Lr" data-numero="103">Lr<br>103</td>
+            </tr>
+        </table> 
+    </div>
+
+    <!-- Ventana Modal -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="elementName"></h2>
+            <p id="elementInfo"></p>
+            <p id="elementChem"></p>
+        </div>
+    </div>
+
+    <script>
+         const elementos = 
+        {
+           "H": {
+        nombre: "Hidrógeno",
+        info: "Elemento más ligero, utilizado en celdas de combustible y producción de energía.",
+        quimica: "Símbolo: H, Número Atómico: 1, Masa Atómica: 1.008 u"
+    },
+    "He": {
+        nombre: "Helio",
+        info: "Gas noble usado en globos y enfriamiento de superconductores.",
+        quimica: "Símbolo: He, Número Atómico: 2, Masa Atómica: 4.0026 u"
+    },
+    "Li": {
+        nombre: "Litio",
+        info: "Utilizado en baterías recargables y tratamiento de trastornos bipolares.",
+        quimica: "Símbolo: Li, Número Atómico: 3, Masa Atómica: 6.94 u"
+    },
+    "Be": {
+        nombre: "Berilio",
+        info: "Utilizado en aleaciones para herramientas no chispeantes.",
+        quimica: "Símbolo: Be, Número Atómico: 4, Masa Atómica: 9.0122 u"
+    },
+    "B": {
+        nombre: "Boro",
+        info: "Usado en materiales resistentes al calor y vidrio de borosilicato.",
+        quimica: "Símbolo: B, Número Atómico: 5, Masa Atómica: 10.81 u"
+    },
+    "C": {
+        nombre: "Carbono",
+        info: "Base de la vida, componente principal de moléculas orgánicas.",
+        quimica: "Símbolo: C, Número Atómico: 6, Masa Atómica: 12.011 u"
+    },
+    "N": {
+        nombre: "Nitrógeno",
+        info: "Gas inerte que forma el 78% del aire atmosférico.",
+        quimica: "Símbolo: N, Número Atómico: 7, Masa Atómica: 14.007 u"
+    },
+    "O": {
+        nombre: "Oxígeno",
+        info: "Esencial para la respiración y la combustión.",
+        quimica: "Símbolo: O, Número Atómico: 8, Masa Atómica: 15.999 u"
+    },
+    "F": {
+        nombre: "Flúor",
+        info: "Usado en la prevención de caries dentales y refrigerantes.",
+        quimica: "Símbolo: F, Número Atómico: 9, Masa Atómica: 18.998 u"
+    },
+    "Ne": {
+        nombre: "Neón",
+        info: "Utilizado en señales luminosas y lámparas de neón.",
+        quimica: "Símbolo: Ne, Número Atómico: 10, Masa Atómica: 20.180 u"
+    },
+    "Na": {
+        nombre: "Sodio",
+        info: "Componente esencial de la sal de mesa y usado en lámparas de vapor.",
+        quimica: "Símbolo: Na, Número Atómico: 11, Masa Atómica: 22.990 u"
+    },
+    "Mg": {
+        nombre: "Magnesio",
+        info: "Utilizado en aleaciones ligeras y fuegos artificiales.",
+        quimica: "Símbolo: Mg, Número Atómico: 12, Masa Atómica: 24.305 u"
+    },
+    "Al": {
+        nombre: "Aluminio",
+        info: "Metal ligero y resistente usado en transporte y envases.",
+        quimica: "Símbolo: Al, Número Atómico: 13, Masa Atómica: 26.981 u"
+    },
+    "Si": {
+        nombre: "Silicio",
+        info: "Elemento clave en la fabricación de semiconductores.",
+        quimica: "Símbolo: Si, Número Atómico: 14, Masa Atómica: 28.085 u"
+    },
+    "P": {
+        nombre: "Fósforo",
+        info: "Componente esencial de fertilizantes y productos químicos.",
+        quimica: "Símbolo: P, Número Atómico: 15, Masa Atómica: 30.974 u"
+    },
+    "S": {
+        nombre: "Azufre",
+        info: "Usado en la fabricación de ácido sulfúrico y vulcanización del caucho.",
+        quimica: "Símbolo: S, Número Atómico: 16, Masa Atómica: 32.06 u"
+    },
+    "Cl": {
+        nombre: "Cloro",
+        info: "Utilizado en desinfectantes y productos de limpieza.",
+        quimica: "Símbolo: Cl, Número Atómico: 17, Masa Atómica: 35.45 u"
+    },
+    "Ar": {
+        nombre: "Argón",
+        info: "Gas inerte utilizado en iluminación y soldadura.",
+        quimica: "Símbolo: Ar, Número Atómico: 18, Masa Atómica: 39.948 u"
+    },
+    "K": {
+        nombre: "Potasio",
+        info: "Importante para la función nerviosa y muscular en organismos vivos.",
+        quimica: "Símbolo: K, Número Atómico: 19, Masa Atómica: 39.098 u"
+    },
+    "Ca": {
+        nombre: "Calcio",
+        info: "Esencial para la formación de huesos y dientes.",
+        quimica: "Símbolo: Ca, Número Atómico: 20, Masa Atómica: 40.078 u"
+    },
+    "Sc": {
+        nombre: "Escandio",
+        info: "Usado en aleaciones ligeras para la industria aeroespacial.",
+        quimica: "Símbolo: Sc, Número Atómico: 21, Masa Atómica: 44.956 u"
+    },
+    "Ti": {
+        nombre: "Titanio",
+        info: "Metal resistente a la corrosión, utilizado en prótesis y aviación.",
+        quimica: "Símbolo: Ti, Número Atómico: 22, Masa Atómica: 47.867 u"
+    },
+    "V": {
+        nombre: "Vanadio",
+        info: "Usado en la producción de acero resistente.",
+        quimica: "Símbolo: V, Número Atómico: 23, Masa Atómica: 50.942 u"
+    },
+    "Cr": {
+        nombre: "Cromo",
+        info: "Utilizado en recubrimientos metálicos para resistencia a la corrosión.",
+        quimica: "Símbolo: Cr, Número Atómico: 24, Masa Atómica: 51.996 u"
+    },
+    "Mn": {
+        nombre: "Manganeso",
+        info: "Importante para la producción de acero y baterías.",
+        quimica: "Símbolo: Mn, Número Atómico: 25, Masa Atómica: 54.938 u"
+    },
+    "Fe": {
+        nombre: "Hierro",
+        info: "Metal base en la fabricación de acero.",
+        quimica: "Símbolo: Fe, Número Atómico: 26, Masa Atómica: 55.845 u"
+    },
+    "Co": {
+        nombre: "Cobalto",
+        info: "Utilizado en imanes y aleaciones resistentes al calor.",
+        quimica: "Símbolo: Co, Número Atómico: 27, Masa Atómica: 58.933 u"
+    },
+    "Ni": {
+        nombre: "Níquel",
+        info: "Usado en baterías recargables y monedas.",
+        quimica: "Símbolo: Ni, Número Atómico: 28, Masa Atómica: 58.693 u"
+    },
+    "Cu": {
+        nombre: "Cobre",
+        info: "Excelente conductor de electricidad, usado en cables y monedas.",
+        quimica: "Símbolo: Cu, Número Atómico: 29, Masa Atómica: 63.546 u"
+    },
+    "Zn": {
+        nombre: "Zinc",
+        info: "Utilizado en recubrimientos protectores contra la corrosión.",
+        quimica: "Símbolo: Zn, Número Atómico: 30, Masa Atómica: 65.38 u"
+    },
+    "Ga": {
+        nombre: "Galio",
+        info: "Utilizado en semiconductores y termómetros.",
+        quimica: "Símbolo: Ga, Número Atómico: 31, Masa Atómica: 69.723 u"
+    },
+    "Ge": {
+        nombre: "Germanio",
+        info: "Usado en semiconductores y fibras ópticas.",
+        quimica: "Símbolo: Ge, Número Atómico: 32, Masa Atómica: 72.63 u"
+    },
+    "As": {
+        nombre: "Arsénico",
+        info: "Usado en aleaciones y en la industria electrónica.",
+        quimica: "Símbolo: As, Número Atómico: 33, Masa Atómica: 74.922 u"
+    },
+    "Se": {
+        nombre: "Selenio",
+        info: "Utilizado en fotoceldas y en la fabricación de vidrio.",
+        quimica: "Símbolo: Se, Número Atómico: 34, Masa Atómica: 78.971 u"
+    },
+    "Br": {
+        nombre: "Bromo",
+        info: "Usado en retardantes de llama y productos químicos fotográficos.",
+        quimica: "Símbolo: Br, Número Atómico: 35, Masa Atómica: 79.904 u"
+    },
+    "Kr": {
+        nombre: "Kriptón",
+        info: "Gas utilizado en iluminación de alta eficiencia.",
+        quimica: "Símbolo: Kr, Número Atómico: 36, Masa Atómica: 83.798 u"
+    },
+    "Rb": {
+        nombre: "Rubidio",
+        info: "Usado en investigaciones científicas y en relojes atómicos.",
+        quimica: "Símbolo: Rb, Número Atómico: 37, Masa Atómica: 85.468 u"
+    },
+    "Sr": {
+        nombre: "Estroncio",
+        info: "Utilizado en fuegos artificiales y tubos de rayos catódicos.",
+        quimica: "Símbolo: Sr, Número Atómico: 38, Masa Atómica: 87.62 u"
+    },
+    "Y": {
+        nombre: "Itrio",
+        info: "Usado en superconductores y en la producción de fósforos.",
+        quimica: "Símbolo: Y, Número Atómico: 39, Masa Atómica: 88.906 u"
+    },
+    "Zr": {
+        nombre: "Circonio",
+        info: "Usado en reactores nucleares y cerámicas avanzadas.",
+        quimica: "Símbolo: Zr, Número Atómico: 40, Masa Atómica: 91.224 u"
+    },
+    "Nb": {
+        nombre: "Niobio",
+        info: "Utilizado en aleaciones de acero y superconductores.",
+        quimica: "Símbolo: Nb, Número Atómico: 41, Masa Atómica: 92.906 u"
+    },
+    "Mo": {
+        nombre: "Molibdeno",
+        info: "Usado en aleaciones de acero y catalizadores industriales.",
+        quimica: "Símbolo: Mo, Número Atómico: 42, Masa Atómica: 95.95 u"
+    },
+    "Tc": {
+        nombre: "Tecnecio",
+        info: "Utilizado en medicina nuclear para estudios de imagen.",
+        quimica: "Símbolo: Tc, Número Atómico: 43, Masa Atómica: 98 u"
+    },
+    "Ru": {
+        nombre: "Rutenio",
+        info: "Utilizado en contactos eléctricos y catalizadores.",
+        quimica: "Símbolo: Ru, Número Atómico: 44, Masa Atómica: 101.07 u"
+    },
+    "Rh": {
+        nombre: "Rodio",
+        info: "Utilizado en catalizadores de automóviles y joyería.",
+        quimica: "Símbolo: Rh, Número Atómico: 45, Masa Atómica: 102.91 u"
+    },
+    "Pd": {
+        nombre: "Paladio",
+        info: "Usado en convertidores catalíticos y joyería.",
+        quimica: "Símbolo: Pd, Número Atómico: 46, Masa Atómica: 106.42 u"
+    },
+    "Ag": {
+        nombre: "Plata",
+        info: "Utilizada en joyería, monedas y electrónica.",
+        quimica: "Símbolo: Ag, Número Atómico: 47, Masa Atómica: 107.87 u"
+    },
+    "Cd": {
+        nombre: "Cadmio",
+        info: "Usado en baterías recargables y pigmentos.",
+        quimica: "Símbolo: Cd, Número Atómico: 48, Masa Atómica: 112.41 u"
+    },
+    "In": {
+        nombre: "Indio",
+        info: "Utilizado en pantallas táctiles y soldaduras.",
+        quimica: "Símbolo: In, Número Atómico: 49, Masa Atómica: 114.82 u"
+    },
+    "Sn": {
+        nombre: "Estaño",
+        info: "Usado en soldaduras y recubrimientos de alimentos.",
+        quimica: "Símbolo: Sn, Número Atómico: 50, Masa Atómica: 118.71 u"
+    },
+    "Sb": {
+        nombre: "Antimonio",
+        info: "Utilizado en retardantes de llama y semiconductores.",
+        quimica: "Símbolo: Sb, Número Atómico: 51, Masa Atómica: 121.76 u"
+    },
+    "Te": {
+        nombre: "Telurio",
+        info: "Utilizado en aleaciones y semiconductores.",
+        quimica: "Símbolo: Te, Número Atómico: 52, Masa Atómica: 127.60 u"
+    },
+    "I": {
+        nombre: "Yodo",
+        info: "Esencial para la función tiroidea y desinfectantes.",
+        quimica: "Símbolo: I, Número Atómico: 53, Masa Atómica: 126.90 u"
+    },
+    "Xe": {
+        nombre: "Xenón",
+        info: "Utilizado en lámparas de flash y anestesia general.",
+        quimica: "Símbolo: Xe, Número Atómico: 54, Masa Atómica: 131.29 u"
+    },
+    "Cs": {
+        nombre: "Cesio",
+        info: "Utilizado en relojes atómicos y sondas espaciales.",
+        quimica: "Símbolo: Cs, Número Atómico: 55, Masa Atómica: 132.91 u"
+    },
+    "Ba": {
+        nombre: "Bario",
+        info: "Usado en contrastes radiológicos y fuegos artificiales.",
+        quimica: "Símbolo: Ba, Número Atómico: 56, Masa Atómica: 137.33 u"
+    },
+    "La": {
+        nombre: "Lantano",
+        info: "Usado en baterías de hidruro metálico y lentes ópticas.",
+        quimica: "Símbolo: La, Número Atómico: 57, Masa Atómica: 138.91 u"
+    },
+    "Ce": {
+        nombre: "Cerio",
+        info: "Usado en encendedores y catalizadores.",
+        quimica: "Símbolo: Ce, Número Atómico: 58, Masa Atómica: 140.12 u"
+    },
+    "Pr": {
+        nombre: "Praseodimio",
+        info: "Utilizado en imanes y vidrios ópticos.",
+        quimica: "Símbolo: Pr, Número Atómico: 59, Masa Atómica: 140.91 u"
+    },
+    "Nd": {
+        nombre: "Neodimio",
+        info: "Usado en imanes de alta potencia y láseres.",
+        quimica: "Símbolo: Nd, Número Atómico: 60, Masa Atómica: 144.24 u"
+    },
+    "Pm": {
+        nombre: "Prometio",
+        info: "Usado en generadores nucleares y relojes atómicos.",
+        quimica: "Símbolo: Pm, Número Atómico: 61, Masa Atómica: 145 u"
+    },
+    "Sm": {
+        nombre: "Samario",
+        info: "Utilizado en imanes y reactores nucleares.",
+        quimica: "Símbolo: Sm, Número Atómico: 62, Masa Atómica: 150.36 u"
+    },
+    "Eu": {
+        nombre: "Europio",
+        info: "Utilizado en pantallas de televisión y lámparas fluorescentes.",
+        quimica: "Símbolo: Eu, Número Atómico: 63, Masa Atómica: 151.96 u"
+    },
+    "Gd": {
+        nombre: "Gadolinio",
+        info: "Usado en imágenes por resonancia magnética (IRM) y reactores nucleares.",
+        quimica: "Símbolo: Gd, Número Atómico: 64, Masa Atómica: 157.25 u"
+    },
+    "Tb": {
+        nombre: "Terbio",
+        info: "Usado en fósforos y pantallas de rayos X.",
+        quimica: "Símbolo: Tb, Número Atómico: 65, Masa Atómica: 158.93 u"
+    },
+    "Dy": {
+        nombre: "Disprosio",
+        info: "Utilizado en imanes de alta potencia y reactores nucleares.",
+        quimica: "Símbolo: Dy, Número Atómico: 66, Masa Atómica: 162.50 u"
+    },
+    "Ho": {
+        nombre: "Holmio",
+        info: "Usado en imanes y reactores nucleares.",
+        quimica: "Símbolo: Ho, Número Atómico: 67, Masa Atómica: 164.93 u"
+    },
+    "Er": {
+        nombre: "Erbio",
+        info: "Utilizado en amplificadores ópticos y láseres.",
+        quimica: "Símbolo: Er, Número Atómico: 68, Masa Atómica: 167.26 u"
+    },
+    "Tm": {
+        nombre: "Tulio",
+        info: "Usado en fuentes de rayos X portátiles y láseres.",
+        quimica: "Símbolo: Tm, Número Atómico: 69, Masa Atómica: 168.93 u"
+    },
+    "Yb": {
+        nombre: "Iterbio",
+        info: "Utilizado en relojes atómicos y sensores de presión.",
+        quimica: "Símbolo: Yb, Número Atómico: 70, Masa Atómica: 173.04 u"
+    },
+    "Lu": {
+        nombre: "Lutecio",
+        info: "Usado en detectores de radiación y catalizadores.",
+        quimica: "Símbolo: Lu, Número Atómico: 71, Masa Atómica: 174.97 u"
+    },
+    "Hf": {
+        nombre: "Hafnio",
+        info: "Utilizado en reactores nucleares y semiconductores.",
+        quimica: "Símbolo: Hf, Número Atómico: 72, Masa Atómica: 178.49 u"
+    },
+    "Ta": {
+        nombre: "Tantalio",
+        info: "Usado en condensadores electrónicos y prótesis médicas.",
+        quimica: "Símbolo: Ta, Número Atómico: 73, Masa Atómica: 180.95 u"
+    },
+    "W": {
+        nombre: "Wolframio",
+        info: "Utilizado en filamentos de bombillas y herramientas de corte.",
+        quimica: "Símbolo: W, Número Atómico: 74, Masa Atómica: 183.84 u"
+    },
+    "Re": {
+        nombre: "Renio",
+        info: "Usado en turbinas de aviones y catalizadores.",
+        quimica: "Símbolo: Re, Número Atómico: 75, Masa Atómica: 186.21 u"
+    },
+    "Os": {
+        nombre: "Osmio",
+        info: "Metal denso usado en aleaciones y contactos eléctricos.",
+        quimica: "Símbolo: Os, Número Atómico: 76, Masa Atómica: 190.23 u"
+    },
+    "Ir": {
+        nombre: "Iridio",
+        info: "Usado en contactos eléctricos y como catalizador.",
+        quimica: "Símbolo: Ir, Número Atómico: 77, Masa Atómica: 192.22 u"
+    },
+    "Pt": {
+        nombre: "Platino",
+        info: "Metal precioso utilizado en joyería y convertidores catalíticos.",
+        quimica: "Símbolo: Pt, Número Atómico: 78, Masa Atómica: 195.08 u"
+    },
+    "Au": {
+        nombre: "Oro",
+        info: "Metal valioso usado en joyería, monedas y electrónica.",
+        quimica: "Símbolo: Au, Número Atómico: 79, Masa Atómica: 196.97 u"
+    },
+    "Hg": {
+        nombre: "Mercurio",
+        info: "Metal líquido usado en termómetros y lámparas fluorescentes.",
+        quimica: "Símbolo: Hg, Número Atómico: 80, Masa Atómica: 200.59 u"
+    },
+    "Tl": {
+        nombre: "Talio",
+        info: "Utilizado en dispositivos electrónicos y venenos.",
+        quimica: "Símbolo: Tl, Número Atómico: 81, Masa Atómica: 204.38 u"
+    },
+    "Pb": {
+        nombre: "Plomo",
+        info: "Usado en baterías, blindaje contra radiación y tuberías antiguas.",
+        quimica: "Símbolo: Pb, Número Atómico: 82, Masa Atómica: 207.2 u"
+    },
+    "Bi": {
+        nombre: "Bismuto",
+        info: "Usado en aleaciones de baja temperatura y productos farmacéuticos.",
+        quimica: "Símbolo: Bi, Número Atómico: 83, Masa Atómica: 208.98 u"
+    },
+    "Po": {
+        nombre: "Polonio",
+        info: "Elemento radiactivo usado en investigaciones científicas.",
+        quimica: "Símbolo: Po, Número Atómico: 84, Masa Atómica: 209 u"
+    },
+    "At": {
+        nombre: "Astato",
+        info: "Elemento raro y radiactivo usado en investigaciones médicas.",
+        quimica: "Símbolo: At, Número Atómico: 85, Masa Atómica: 210 u"
+    },
+    "Rn": {
+        nombre: "Radón",
+        info: "Gas radiactivo utilizado en tratamientos de cáncer.",
+        quimica: "Símbolo: Rn, Número Atómico: 86, Masa Atómica: 222 u"
+    },
+    "Fr": {
+        nombre: "Francio",
+        info: "Elemento extremadamente radiactivo con aplicaciones limitadas.",
+        quimica: "Símbolo: Fr, Número Atómico: 87, Masa Atómica: 223 u"
+    },
+    "Ra": {
+        nombre: "Radio",
+        info: "Elemento radiactivo utilizado en investigaciones y tratamientos médicos.",
+        quimica: "Símbolo: Ra, Número Atómico: 88, Masa Atómica: 226 u"
+    },
+    "Ac": {
+        nombre: "Actinio",
+        info: "Elemento radiactivo usado en investigaciones científicas.",
+        quimica: "Símbolo: Ac, Número Atómico: 89, Masa Atómica: 227 u"
+    },
+    "Th": {
+        nombre: "Torio",
+        info: "Usado en reactores nucleares y lámparas de gas.",
+        quimica: "Símbolo: Th, Número Atómico: 90, Masa Atómica: 232.04 u"
+    },
+    "Pa": {
+        nombre: "Protactinio",
+        info: "Elemento radiactivo utilizado en investigaciones científicas.",
+        quimica: "Símbolo: Pa, Número Atómico: 91, Masa Atómica: 231.04 u"
+    },
+    "U": {
+        nombre: "Uranio",
+        info: "Utilizado como combustible en reactores nucleares y en armas nucleares.",
+        quimica: "Símbolo: U, Número Atómico: 92, Masa Atómica: 238.03 u"
+    },
+    "Np": {
+        nombre: "Neptunio",
+        info: "Elemento radiactivo utilizado en investigaciones científicas.",
+        quimica: "Símbolo: Np, Número Atómico: 93, Masa Atómica: 237 u"
+    },
+    "Pu": {
+        nombre: "Plutonio",
+        info: "Elemento radiactivo usado en armas nucleares y reactores.",
+        quimica: "Símbolo: Pu, Número Atómico: 94, Masa Atómica: 244 u"
+    },
+    "Am": {
+        nombre: "Americio",
+        info: "Usado en detectores de humo y en investigaciones nucleares.",
+        quimica: "Símbolo: Am, Número Atómico: 95, Masa Atómica: 243 u"
+    },
+    "Cm": {
+        nombre: "Curio",
+        info: "Elemento radiactivo utilizado en generadores termoeléctricos.",
+        quimica: "Símbolo: Cm, Número Atómico: 96, Masa Atómica: 247 u"
+    },
+    "Bk": {
+        nombre: "Berkelio",
+        info: "Elemento radiactivo usado en investigaciones científicas.",
+        quimica: "Símbolo: Bk, Número Atómico: 97, Masa Atómica: 247 u"
+    },
+    "Cf": {
+        nombre: "Californio",
+        info: "Usado en detectores de metales y en investigaciones nucleares.",
+        quimica: "Símbolo: Cf, Número Atómico: 98, Masa Atómica: 251 u"
+    },
+    "Es": {
+        nombre: "Einsteinio",
+        info: "Elemento radiactivo usado en investigaciones científicas.",
+        quimica: "Símbolo: Es, Número Atómico: 99, Masa Atómica: 252 u"
+    },
+    "Fm": {
+        nombre: "Fermio",
+        info: "Elemento radiactivo usado en investigaciones nucleares.",
+        quimica: "Símbolo: Fm, Número Atómico: 100, Masa Atómica: 257 u"
+    },
+    "Md": {
+        nombre: "Mendelevio",
+        info: "Elemento radiactivo usado en investigaciones científicas.",
+        quimica: "Símbolo: Md, Número Atómico: 101, Masa Atómica: 258 u"
+    },
+    "No": {
+        nombre: "Nobelio",
+        info: "Elemento radiactivo usado en investigaciones nucleares.",
+        quimica: "Símbolo: No, Número Atómico: 102, Masa Atómica: 259 u"
+    },
+    "Lr": {
+        nombre: "Lawrencio",
+        info: "Elemento radiactivo con usos limitados en investigaciones.",
+        quimica: "Símbolo: Lr, Número Atómico: 103, Masa Atómica: 262 u"
+    },
+    "Rf": {
+        nombre: "Rutherfordio",
+        info: "Elemento sintético utilizado en investigaciones científicas.",
+        quimica: "Símbolo: Rf, Número Atómico: 104, Masa Atómica: 267 u"
+    },
+    "Db": {
+        nombre: "Dubnio",
+        info: "Elemento sintético utilizado en investigaciones científicas.",
+        quimica: "Símbolo: Db, Número Atómico: 105, Masa Atómica: 270 u"
+    },
+    "Sg": {
+        nombre: "Seaborgio",
+        info: "Elemento sintético usado en investigaciones nucleares.",
+        quimica: "Símbolo: Sg, Número Atómico: 106, Masa Atómica: 271 u"
+    },
+    "Bh": {
+        nombre: "Bohrio",
+        info: "Elemento sintético utilizado en investigaciones científicas.",
+        quimica: "Símbolo: Bh, Número Atómico: 107, Masa Atómica: 270 u"
+    },
+    "Hs": {
+        nombre: "Hassio",
+        info: "Elemento sintético utilizado en investigaciones científicas.",
+        quimica: "Símbolo: Hs, Número Atómico: 108, Masa Atómica: 277 u"
+    },
+    "Mt": {
+        nombre: "Meitnerio",
+        info: "Elemento sintético utilizado en investigaciones científicas.",
+        quimica: "Símbolo: Mt, Número Atómico: 109, Masa Atómica: 278 u"
+    },
+    "Ds": {
+        nombre: "Darmstadio",
+        info: "Elemento sintético utilizado en investigaciones científicas.",
+        quimica: "Símbolo: Ds, Número Atómico: 110, Masa Atómica: 281 u"
+    },
+    "Rg": {
+        nombre: "Roentgenio",
+        info: "Elemento sintético con aplicaciones en investigaciones.",
+        quimica: "Símbolo: Rg, Número Atómico: 111, Masa Atómica: 282 u"
+    },
+    "Cn": {
+        nombre: "Copernicio",
+        info: "Elemento sintético utilizado en investigaciones científicas.",
+        quimica: "Símbolo: Cn, Número Atómico: 112, Masa Atómica: 285 u"
+    },
+    "Nh": {
+        nombre: "Nihonio",
+        info: "Elemento sintético utilizado en investigaciones científicas.",
+        quimica: "Símbolo: Nh, Número Atómico: 113, Masa Atómica: 286 u"
+    },
+    "Fl": {
+        nombre: "Flerovio",
+        info: "Elemento sintético utilizado en investigaciones científicas.",
+        quimica: "Símbolo: Fl, Número Atómico: 114, Masa Atómica: 289 u"
+    },
+    "Mc": {
+        nombre: "Moscovio",
+        info: "Elemento sintético con aplicaciones en investigaciones.",
+        quimica: "Símbolo: Mc, Número Atómico: 115, Masa Atómica: 290 u"
+    },
+    "Lv": {
+        nombre: "Livermorio",
+        info: "Elemento sintético utilizado en investigaciones científicas.",
+        quimica: "Símbolo: Lv, Número Atómico: 116, Masa Atómica: 293 u"
+    },
+    "Ts": {
+        nombre: "Tenesino",
+        info: "Elemento sintético con aplicaciones en investigaciones.",
+        quimica: "Símbolo: Ts, Número Atómico: 117, Masa Atómica: 294 u"
+    },
+    "Og": {
+        nombre: "Oganesón",
+        info: "Elemento sintético altamente radiactivo con pocas aplicaciones prácticas.",
+        quimica: "Símbolo: Og, Número Atómico: 118, Masa Atómica: 294 u"
+    },
+        };
+
+        // Obtener la referencia de la modal
+        const modal = document.getElementById("infoModal");
+        const span = document.getElementsByClassName("close")[0];
+        const elementName = document.getElementById("elementName");
+        const elementInfo = document.getElementById("elementInfo");
+        const elementChem = document.getElementById("elementChem");
+
+        // Función para abrir la modal con la información del elemento
+        function showElementInfo(event) {
+            const simbolo = event.target.getAttribute('data-simbolo');
+            if (elementos[simbolo]) {
+                const elemento = elementos[simbolo];
+                elementName.textContent = elemento.nombre;
+                elementInfo.textContent = elemento.info;
+                elementChem.textContent = elemento.quimica;
+                modal.style.display = "flex"; // Mostrar la modal
+            } else {
+                alert("Información no disponible para este elemento.");
+            }
+        }
+
+        // Cerrar la ventana modal cuando el usuario haga clic en el botón de cerrar
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Cerrar la modal cuando el usuario haga clic fuera de la ventana modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Asignar el evento click a cada celda de la tabla periódica
+        document.querySelectorAll('.tabla-periodica td').forEach(celda => {
+            celda.addEventListener('click', showElementInfo);
+        });
+    </script>
+</body>
+</html>
